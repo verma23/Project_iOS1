@@ -99,6 +99,7 @@
 		10D036DC27D029BE0067720F /* Project_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				10D0370D27D02A7F0067720F /* Test */,
 				10D036DD27D029BE0067720F /* AppDelegate.swift */,
 				10D036DF27D029BE0067720F /* SceneDelegate.swift */,
 				10D036E127D029BE0067720F /* ViewController.swift */,
@@ -125,6 +126,13 @@
 				10D0370027D029BF0067720F /* Project_iOSUITestsLaunchTests.swift */,
 			);
 			path = Project_iOSUITests;
+			sourceTree = "<group>";
+		};
+		10D0370D27D02A7F0067720F /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
