@@ -13,9 +13,6 @@
 		10D036E527D029BE0067720F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D036E327D029BE0067720F /* Main.storyboard */; };
 		10D036E727D029BF0067720F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D036E627D029BF0067720F /* Assets.xcassets */; };
 		10D036EA27D029BF0067720F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D036E827D029BF0067720F /* LaunchScreen.storyboard */; };
-		10D036F527D029BF0067720F /* Project_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D036F427D029BF0067720F /* Project_iOSTests.swift */; };
-		10D036FF27D029BF0067720F /* Project_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D036FE27D029BF0067720F /* Project_iOSUITests.swift */; };
-		10D0370127D029BF0067720F /* Project_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D0370027D029BF0067720F /* Project_iOSUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +42,7 @@
 		10D036E927D029BF0067720F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10D036EB27D029BF0067720F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10D036F027D029BF0067720F /* Project_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		10D036F427D029BF0067720F /* Project_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_iOSTests.swift; sourceTree = "<group>"; };
 		10D036FA27D029BF0067720F /* Project_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		10D036FE27D029BF0067720F /* Project_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_iOSUITests.swift; sourceTree = "<group>"; };
-		10D0370027D029BF0067720F /* Project_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				10D036DC27D029BE0067720F /* Project_iOS */,
-				10D036F327D029BF0067720F /* Project_iOSTests */,
-				10D036FD27D029BF0067720F /* Project_iOSUITests */,
 				10D036DB27D029BE0067720F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,7 +91,6 @@
 		10D036DC27D029BE0067720F /* Project_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				10D0370D27D02A7F0067720F /* Test */,
 				10D036DD27D029BE0067720F /* AppDelegate.swift */,
 				10D036DF27D029BE0067720F /* SceneDelegate.swift */,
 				10D036E127D029BE0067720F /* ViewController.swift */,
@@ -109,30 +100,6 @@
 				10D036EB27D029BF0067720F /* Info.plist */,
 			);
 			path = Project_iOS;
-			sourceTree = "<group>";
-		};
-		10D036F327D029BF0067720F /* Project_iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				10D036F427D029BF0067720F /* Project_iOSTests.swift */,
-			);
-			path = Project_iOSTests;
-			sourceTree = "<group>";
-		};
-		10D036FD27D029BF0067720F /* Project_iOSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				10D036FE27D029BF0067720F /* Project_iOSUITests.swift */,
-				10D0370027D029BF0067720F /* Project_iOSUITestsLaunchTests.swift */,
-			);
-			path = Project_iOSUITests;
-			sourceTree = "<group>";
-		};
-		10D0370D27D02A7F0067720F /* Test */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10D036F527D029BF0067720F /* Project_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10D0370127D029BF0067720F /* Project_iOSUITestsLaunchTests.swift in Sources */,
-				10D036FF27D029BF0067720F /* Project_iOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
