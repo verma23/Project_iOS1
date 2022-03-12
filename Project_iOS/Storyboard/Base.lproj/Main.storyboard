@@ -78,7 +78,7 @@
                                         <barButtonItem key="leftBarButtonItem" image="arrowshape.turn.up.backward.fill" catalog="system" id="O3C-Me-zfl">
                                             <color key="tintColor" systemColor="systemGreenColor"/>
                                             <connections>
-                                                <segue destination="BLv-Oc-7ZZ" kind="unwind" unwindAction="unwindToHomeViewControllerWithSegue:" id="lOR-jB-5b8"/>
+                                                <segue destination="XYV-SC-lGi" kind="presentation" id="Tng-94-p3B"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -218,7 +218,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Oq-Dz-gIJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="BLv-Oc-7ZZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="807" y="-165"/>
         </scene>
@@ -315,8 +314,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vbV-wL-rjf"/>
-        <segue reference="9mm-AD-oGu"/>
+        <segue reference="WOm-YS-Cbm"/>
+        <segue reference="EEj-fg-2V5"/>
+        <segue reference="pmz-bl-YdE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.turn.up.backward.fill" catalog="system" width="128" height="106"/>
