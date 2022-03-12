@@ -17,6 +17,9 @@
 		10D037E027DC13EC0067720F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D037DF27DC13EC0067720F /* RegisterViewController.swift */; };
 		10D037EC27DC1C850067720F /* bg_main.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 10D037EB27DC1C850067720F /* bg_main.jpg */; };
 		10D037F227DC28F70067720F /* projDatabase.db in Resources */ = {isa = PBXBuildFile; fileRef = 10D037F127DC28F60067720F /* projDatabase.db */; };
+		10D037F627DCEC2A0067720F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D037F427DCEC1F0067720F /* libsqlite3.0.tbd */; };
+		10D037F727DCEC300067720F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D037F527DCEC1F0067720F /* libsqlite3.tbd */; };
+		10D037F927DCED1C0067720F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D037F827DCED1B0067720F /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		10D037DF27DC13EC0067720F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		10D037EB27DC1C850067720F /* bg_main.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_main.jpg; sourceTree = "<group>"; };
 		10D037F127DC28F60067720F /* projDatabase.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = projDatabase.db; sourceTree = "<group>"; };
+		10D037F427DCEC1F0067720F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		10D037F527DCEC1F0067720F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		10D037F827DCED1B0067720F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10D037F727DCEC300067720F /* libsqlite3.tbd in Frameworks */,
+				10D037F627DCEC2A0067720F /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +91,7 @@
 			children = (
 				10D036DC27D029BE0067720F /* Project_iOS */,
 				10D036DB27D029BE0067720F /* Products */,
+				10D037F327DCEC1E0067720F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +141,7 @@
 			children = (
 				10D036DF27D029BE0067720F /* SceneDelegate.swift */,
 				10D036DD27D029BE0067720F /* AppDelegate.swift */,
+				10D037F827DCED1B0067720F /* Data.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -160,6 +170,15 @@
 				10D037EB27DC1C850067720F /* bg_main.jpg */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		10D037F327DCEC1E0067720F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10D037F427DCEC1F0067720F /* libsqlite3.0.tbd */,
+				10D037F527DCEC1F0067720F /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10D037DE27DC13DE0067720F /* LoginViewController.swift in Sources */,
+				10D037F927DCED1C0067720F /* Data.swift in Sources */,
 				10D037E027DC13EC0067720F /* RegisterViewController.swift in Sources */,
 				10D036E227D029BE0067720F /* ViewController.swift in Sources */,
 				10D036DE27D029BE0067720F /* AppDelegate.swift in Sources */,

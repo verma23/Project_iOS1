@@ -19,8 +19,23 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var tConfirmPass: UITextField!
     
   
+    let mainDelegate = UIApplication.shared.delegate as! AppDelegate
     
+ 
+    @IBAction func addUserToDatabase(sender : Any){
+        let person = Data.init()
+        person.initWithData(theRow: 0, theFname: tFname.text!, theLname: tLname.text!, theEmail: tEmailAdd.text!,thePhone: tPnum.text!, theNpass: tNewPass.text!, theConfirmpass: tConfirmPass.text!)
+        let mainDelegate = UIApplication.shared.delegate as! AppDelegate
+        let returnCode = mainDelegate.insertIntoDatabase(person: person)
+                var reutrnMSG : String = "Person Added"
+                if returnCode == false{
+                    reutrnMSG = "Person Add Failed"
+                }
+        displayMyAlerMessage(userMessage: "User added ")
         
+        
+    }
+    
     @IBAction func RegisterUser(_ sender: Any) {
         let firstName = tFname.text;
         let lastName = tLname.text;

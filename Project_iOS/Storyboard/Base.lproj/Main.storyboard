@@ -66,6 +66,9 @@
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="given-name"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ost-F9-Z9a" id="5VY-gx-I53"/>
+                                </connections>
                             </textField>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nGb-A6-9Az">
                                 <rect key="frame" x="0.0" y="31" width="428" height="44"/>
@@ -87,6 +90,9 @@
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="family-name"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ost-F9-Z9a" id="GXj-m3-bPf"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trQ-bh-ti6">
                                 <rect key="frame" x="48" y="346" width="153" height="33"/>
@@ -101,6 +107,9 @@
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ost-F9-Z9a" id="SSJ-mJ-0f2"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjD-eb-Yce">
                                 <rect key="frame" x="48" y="423" width="153" height="33"/>
@@ -115,6 +124,9 @@
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ost-F9-Z9a" id="6Nb-xO-TVz"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zsE-jZ-skQ">
                                 <rect key="frame" x="48" y="539" width="318" height="34"/>
@@ -122,6 +134,9 @@
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="new-password"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ost-F9-Z9a" id="xRn-gX-PC9"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unx-KK-x9x">
                                 <rect key="frame" x="48" y="500" width="153" height="33"/>
@@ -143,6 +158,9 @@
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ost-F9-Z9a" id="fPO-4w-eaM"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9V3-dp-oat">
                                 <rect key="frame" x="106" y="692" width="217" height="48"/>
@@ -152,6 +170,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Register"/>
                                 <connections>
                                     <action selector="RegisterUser:" destination="Ost-F9-Z9a" eventType="touchUpInside" id="CcG-50-a5B"/>
+                                    <action selector="addUserToDatabaseWithSender:" destination="Ost-F9-Z9a" eventType="touchUpInside" id="57l-xW-CjZ"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="pmz-bl-YdE"/>
                                 </connections>
                             </button>
@@ -201,7 +220,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Oq-Dz-gIJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="BLv-Oc-7ZZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-69" y="-152"/>
+            <point key="canvasLocation" x="807" y="-165"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="cdH-2T-0r2">
@@ -292,12 +311,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GX6-iY-j3S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="zHQ-va-YEG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="664" y="-152"/>
+            <point key="canvasLocation" x="1570" y="-164"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="vbV-wL-rjf"/>
-        <segue reference="pmz-bl-YdE"/>
+        <segue reference="9mm-AD-oGu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.turn.up.backward.fill" catalog="system" width="128" height="106"/>
