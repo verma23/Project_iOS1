@@ -32,7 +32,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-774" y="-152"/>
+            <point key="canvasLocation" x="-1106" y="-449"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="eOC-Mq-PC4">
@@ -219,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Oq-Dz-gIJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="807" y="-165"/>
+            <point key="canvasLocation" x="-439" y="-449"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="cdH-2T-0r2">
@@ -289,6 +289,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Log In"/>
                                 <connections>
+                                    <action selector="LoginUser:" destination="XYV-SC-lGi" eventType="touchUpInside" id="qUl-Fx-VZ5"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="9mm-AD-oGu"/>
                                 </connections>
                             </button>
@@ -306,17 +307,21 @@
                         <viewLayoutGuide key="safeArea" id="uuA-zU-bPk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="Pass" destination="Tnf-aQ-WwG" id="ZuB-C3-geR"/>
+                        <outlet property="tEmailAddress" destination="Kay-Hq-EUb" id="g2Z-yh-7Qu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GX6-iY-j3S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="zHQ-va-YEG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1570" y="-164"/>
+            <point key="canvasLocation" x="236" y="-449"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="WOm-YS-Cbm"/>
         <segue reference="EEj-fg-2V5"/>
-        <segue reference="pmz-bl-YdE"/>
+        <segue reference="9mm-AD-oGu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.turn.up.backward.fill" catalog="system" width="128" height="106"/>

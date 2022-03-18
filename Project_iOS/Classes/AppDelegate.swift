@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 import SQLite3
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,11 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         let documentPaths  = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let documentDir = documentPaths[0]
         databasePath = documentDir.appending("/" + databaseName!)
     
-        
+        FirebaseApp.configure()
         checkAndCreateDatabase()
         readFromDataBase()
         

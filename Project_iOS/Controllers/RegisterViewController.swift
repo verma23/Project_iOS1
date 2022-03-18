@@ -61,12 +61,14 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     }
     func displayMyAlerMessage(userMessage : String)
     {
-        var myAlert = UIAlertController(title: "Warning", message: userMessage, preferredStyle: .alert)
+        var myAlert = UIAlertController(title: "Attention", message: userMessage, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
         myAlert.addAction(okAction)
         present(myAlert, animated: true)
     
     }
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
